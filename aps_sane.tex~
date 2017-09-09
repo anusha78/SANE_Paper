@@ -1,0 +1,1741 @@
+%% ****** Start of file apstemplate.tex ****** %
+%%
+%%
+%%   This file is part of the APS files in the REVTeX 4 distribution.
+%%   Version 4.1r of REVTeX, August 2010
+%%
+%%
+%%   Copyright (c) 2001, 2009, 2010 The American Physical Society.
+%%
+%%   See the REVTeX 4 README file for restrictions and more information.
+%%
+%
+% This is a template for producing manuscripts for use with REVTEX 4.0
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+%
+% Group addresses by affiliation; use superscriptaddress for long
+% author lists, or if there are many overlapping affiliations.
+% For Phys. Rev. appearance, change preprint to twocolumn.
+% Choose pra, prb, prc, prd, pre, prl, prstab, prstper, or rmp for journal
+%  Add 'draft' option to mark overfull boxes with black boxes
+%  Add 'showpacs' option to make PACS codes appear
+%  Add 'showkeys' option to make keywords appear
+\documentclass[aps,prc,nofootinbib,twocolumn,superscriptaddress]{revtex4}
+%\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-1}
+%\documentclass[aps,prl,reprint,groupedaddress]{revtex4-1}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+%\usepackage{subcaption}
+
+% You should use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+\bibliographystyle{apsrev}
+%\bibstyle{}
+
+\begin{document}
+
+% Use the \preprint command to place your local institutional report
+% number in the upper righthand corner of the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+% Use the 'preprintnumbers' class option to override journal defaults
+% to display numbers if necessary
+%\preprint{}
+
+%Title of paper
+\title{Proton Form Factor Ratio, \boldmath $\mu_p G_E^p/G_M^p$ from Double Spin Asymmetry}
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro foreach each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+\author{A. Liyanage}
+\affiliation{Hampton University, Hampton, Virginia 23668, USA}
+
+\author{M. Kohl}
+%\email[]{Your e-mail address}
+%\homepage[]{Your web page}
+%\thanks{}
+\affiliation{Hampton University, Hampton, Virginia 23668, USA}
+
+\author{M. K. Jones}
+\affiliation{Thomas Jefferson National Accelerator Facility, Newport
+  News, Virginia 23606, USA} 
+
+\author{C. Keppel}
+\affiliation{Thomas Jefferson National Accelerator Facility, Newport
+  News, Virginia 23606, USA} 
+
+\author{E. Christy}
+\affiliation{Hampton University, Hampton, Virginia 23668, USA}
+
+\author{S. Choi}
+\affiliation{Seoul National University, Seoul, Korea}
+
+\author{H-K. Kang}
+\affiliation{Seoul National University, Seoul, Korea}
+
+\author{Z. E. Meziani}
+\affiliation{Temple University, Philadelphia, Pennsylvania 19122, USA}
+
+\author{W. Armstrong}
+\affiliation{Temple University, Philadelphia, Pennsylvania 19122, USA}
+
+\author{O. A. Rondon}
+\affiliation{University of Virginia, Charlottesville, Virginia 22903, USA}
+
+\author{D. Crabb}
+\affiliation{University of Virginia, Charlottesville, Virginia 22903, USA}
+
+\author{D. Day}
+\affiliation{University of Virginia, Charlottesville, Virginia 22903, USA}
+
+\author{J. Maxwell}
+\affiliation{University of Virginia, Charlottesville, Virginia 22903, USA}
+
+\author{J. Mulholland}
+\affiliation{University of Virginia, Charlottesville, Virginia 22903, USA}
+
+\author{H. Baghdasaryan}
+\affiliation{University of Virginia, Charlottesville, Virginia 22903, USA}
+
+\author{N. Kalantarians}
+\affiliation{University of Virginia, Charlottesville, Virginia 22903, USA}
+
+\author{L. Ndukum}
+\affiliation{Mississippi State University, Jackson. Mississippi 39762, USA}
+
+\author{J. Dunne}
+\affiliation{Mississippi State University, Jackson. Mississippi 39762, USA}
+
+
+
+%Collaboration name if desired (requires use of superscriptaddress
+%option in \documentclass). \noaffiliation is required (may also be
+%used with the \author command).
+%\collaboration can be followed by \email, \homepage, \thanks as well.
+%\collaboration{}
+%\noaffiliation
+
+\date{\today}
+
+\begin{abstract}
+% insert abstract here
+The ratio of the electric and magnetic form factor of the proton,
+$\mu_p G_E^p/G_M^p$ has been measured for elastic electron-proton
+scattering with polarized beam and target up to four-momentum transfer
+squared, $Q^2=5.66$ (GeV/c)$^2$ using the double spin asymmetry for
+target spin orientation aligned parallel and nearly perpendicular to
+the beam momentum direction.  
+%They are functions of the four-momentum transfer squared $Q^2$
+%between the electron and the proton.  
+%The form factors, $G_E$ and $G_M$ are experimentally accessible
+%through \emph{Rosenbluth separation method} and
+%\emph{double-polarization observables}. Both methods are sensitive to
+%the form factors in different ways. There are two classes of
+%double-polarization observables, the \emph{polarization-transfer
+%method} and the \emph{double spin asymmetry} which has the same
+%sensitivity to the form factor ratio as the first
+%class. polarization-transfer method offer superior sensitivity to the
+%electric form factor at higher $Q^2$. However, double spin asymmetry
+%experiments were not carried out as the Rosenbluth or
+%polarization-transfer experiments.  
+%This paper reports the results of a new measurement of the ratio of
+%the electric and magnetic form factors of the proton up to $Q^2=5.66$
+%(GeV/c)$^2$ using the double spin asymmetry with a polarized beam and
+%target. 
+
+%Experiment E07-003 (SANE, Spin Asymmetries of the Nucleon Experiment)
+%was carried out in Hall C at Jefferson Lab in 2009 to study the
+%proton spin structure functions with a dynamically polarized ammonia
+%target and longitudinally polarized electron beam. By detecting
+%elastically scattered protons in the High-Momentum Spectrometer (HMS)
+%in coincidence with the electrons in the Big Electron Telescope Array
+%(BETA), elastic measurements were carried out in parallel. The
+%elastic double spin asymmetry allows one to extract the proton
+%electric to magnetic form factor ratio $G_E^p/G_M^p$ at high-momentum
+%transfer, $Q^2=5.66$ (GeV/c)$^2$. In addition to the coincidence
+%data, inclusively scattered electrons from the polarized ammonia
+%target were detected by HMS, which allows to measure the beam-target
+%asymmetry in the elastic region with the target spin nearly
+%perpendicular to the momentum transfer, and to extract $G_E^p/G_M^p$
+%at low $Q^2=2.06$ (GeV/c)$^2$.  
+
+This measurement of $\mu_p G_E^p/G_M^p$ agrees with $Q^2$ dependence
+of previous recoil polarization data and reconfirms the %dramatic
+discrepancy at high $Q^2$ between the Rosenbluth and the
+polarization-transfer method with a different measurement technique
+and systematic uncertainties uncorrelated to those of the
+recoil-polarization measurements. The  form factor ratio at $Q^2$=2.06
+(GeV/c)$^2$ has been measured as $\mu_p
+G_E^p/G_M^p = 0.720 \pm 0.176_{stat} \pm 0.039_{sys}$ which is in agreement
+with an earlier measurement with the polarized target technique at
+similar kinematics. At $Q^2$=5.66 (GeV/c)$^2$, the form factor ratio
+has been determined as $\mu_p
+G_E^p/G_M^p=0.244\pm0.353_{stat}\pm0.013_{sys}$ which represents the
+highest $Q^2$ reach with the double spin asymmetry to date. 
+
+\end{abstract}
+
+% insert suggested PACS numbers in braces on next line
+\pacs{}
+% insert suggested keywords - APS authors don't need to do this
+%\keywords{}
+
+%\maketitle must follow title, authors, abstract, \pacs, and \keywords
+\maketitle
+
+% body of paper here - Use proper section commands
+% References should be done using the \cite, \ref, and \label commands
+\section{Introduction}
+% Put \label in argument of \section for cross-referencing
+%\section{\label{}}
+The elastic form factors are fundamental properties of the nucleon
+representing the effect of its structure on the response to
+electromagnetic probes such as electrons.  %Therefore, 
+Detailed
+knowledge of the nucleon form factors is very important to understand
+the nucleus. Electron scattering is an excellent tool to probe deep
+inside nucleons and nuclei. In the one-photon exchange (Born)
+approximation, the structure of the proton or neutron is characterized
+by the electric and magnetic (Sachs) form factors $G_E (Q^2 )$ and
+$G_M (Q^2 )$, which depend only on the four-momentum transfer squared,
+$Q^2$. At $Q^2=0$, the proton form factors are normalized to the
+charge $G_E^p(0)=1$ (in units of $e$) and the magnetic moment 
+$G_M^p(0)=\mu_p=2.79$ (in units of nuclear magnetons). 
+
+%Polarized target:
+%Dombey (1969), Donnelly and Raskin (1986)
+%[83] N. Dombey, Rev. Mod. Phys. 41 (1969) 236.
+%[85] T.W. Donnelly, A.S. Raskin, Ann. Phys. 169 (1986) 247.
+%[86] A.S. Raskin, T.W. Donnelly, Ann. Phys. 191 (1989) 78.
+
+%Recoil polarization:
+%Akhiezer and Rekalo (1968+1974), Arnold, Carlson and Gross (1981)
+%[81] A.I. Akhiezer, M.P. Rekalo, Sov. Phys. Dokl. 13 (1968) 572; 
+% Dokl. Akad. Nauk Ser. Fiz. 180 (1968) 1081.
+%[82] A.I. Akhiezer, M.P. Rekalo, Sov. J. Part. Nucl. 4 (1974) 277; 
+% Fiz. Elem. Chast. Atom. Yadra 4 (1973) 662.
+%[84] R.G. Arnold, C.E. Carlson, F. Gross, Phys. Rev. C 23 (1981) 363.
+
+The Rosenbluth separation technique has been the first method to
+separate the squares of the proton form factors $G_E^p$ and $G_M^p$ by
+measuring the unpolarized
+elastic electron scattering cross sections at different
+angles and energies at fixed $Q^2$ \cite{rosenbluth1950}. 
+In addition,
+the proton form factor ratio, $\mu_p G_E^p/G_M^p$ has been extracted
+from measurements of polarization components of the proton recoiling
+from the scattering of longitudinally polarized electrons \cite{157, 160}
+%  158, 159}. 
+In the ratio of polarization components, which is
+proportional to $G_E^p/G_M^p$, many of the experimental systematic
+errors are canceled.  
+
+Measurement of the beam-target asymmetry using double polarization
+experiments with polarized target is a third technique to extract
+$\mu_p G_E^p/G_M^p$, which has not been conducted as often as
+Rosenbluth separation or recoil polarization experiments
+\cite{158,156}. For elastic scattering of polarized electrons from a
+polarized target, the beam-target double asymmetry, $A_p$ is directly
+related to the form factor ratio, $G_E^p/G_M^p$ as; 
+\begin {equation}
+%\begin {aligned}
+\label {asym}
+A_p=\frac{-bR\sin\theta^*\cos\phi^*-a\cos\theta^*}{R^2+c},
+%\end {aligned}
+\end {equation}
+where $R=G_E^p/G_M^p$ with %$R = 1/\mu_p = 1/2.79$ at $Q^2=0$. 
+$R = 1/2.79$ at $Q^2=0$. 
+The polar and azimuthal angles, $\theta^*$ and $\phi^*$ relative to
+the $z$ and $x$ axes, respectively, describe the
+orientation of the proton polarization vector relative to the
+direction of momentum 
+transfer, $\vec{q} = \vec{p}_e - \vec{p}_{e'}$, where the $z$ axis
+points along $\vec{q}$, the $y$ axis perpendicular to the
+scattering plane defined by the electron three-momenta ($\vec{p}_e
+\times \vec{p}_{e'}$), and the $x$ axis so to form a right-handed
+coordinate frame. The quantities $a,b,c$ are kinematic factors given by
+$a=2\tau\tan\frac{\theta_e}{2}\sqrt{1+\tau+(1+\tau)^2\tan^2\frac{\theta_e}{2}}$,
+$b=2\tan\frac{\theta_e}{2}\sqrt{\tau(1+\tau)}$ and
+$c=\tau+2\tau(1+\tau)\tan^2\frac{\theta_e}{2}$ with $\tau=
+Q^2/(4M^2)$, where $\theta_e$ is the electron scattering angle and $M$
+is the proton mass.% \cite{156}. 
+
+\begin{figure}[b]
+%\centering
+%\includegraphics[scale=0.45]{gep_gmp_ratio_noSANE}
+\includegraphics[width=\linewidth]{gep_gmp_ratio_noSANE}
+\caption{Proton electric to magnetic form factor ratio from
+  Rosenbluth-separated cross-sections (\emph{black symbols}) \cite{26,
+    27, 28, 29, 30, 31, 32, 33, 34, 35} and from double-polarization
+  experiments (colored symbols) \cite{43, 44, 45, 46, 47, 48, 49, 50,
+    51, 52, 53, 54, 55, 56, 58, 59, 60}. The parametrization by
+  Kelly \cite{99} is also shown.} 
+\label{fig1}
+\end{figure}
+
+The world data of the proton form factor ratio, $\mu_pG^p_E/G^p_M$ from
+the Rosenbluth separation method \cite{26, 27, 28, 29, 30, 31, 32, 33,
+  34, 35}  are shown in Fig.~\ref{fig1} along with those obtained
+from double polarization experiments with recoil polarization
+\cite{43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 58}
+% 57, 58}
+and polarized target \cite{59,60}. An almost linear fall-off of the
+polarization data can be seen compared to the nearly flat $Q^2$
+dependence of $\mu_pG_E^p/G_M^p$ measured with the Rosenbluth
+technique. One possible solution that explains the difference between
+the polarized and unpolarized methods is two-photon exchange (TPE) \cite{97,
+ 98, 96, 95, 94, 93, 92, 91, 90, 89}, which mostly affects the
+Rosenbluth data while the correction of the polarization data is
+small. It is also argued that other effects than TPE are
+responsible for the discrepancy \cite{Kondratyuk:2005kk, Kuraev:2007dn,
+Pacetti:2016}.
+Several experiments have been conducted to validate the TPE hypothesis
+by probing the angular dependence of recoil polarization~\cite{43}, nonlinear
+dependence of unpolarized cross sections on $\epsilon$~\cite{163},
+and by
+directly comparing $e^+p$ and $e^-p$ elastic scattering~\cite{154,161,162,155}.
+Evidence for TPE at $Q^2 < 2.5$ (GeV/c)$^2$ has been found to be smaller than 
+expected, and more data is needed at high $Q^2$ to be conclusive~\cite{155}.
+
+Having formally the equivalent sensitivity as the recoil polarization
+technique to the form factor ratio, the third technique,  beam-target
+asymmetry, is very well suited to verify the results of the recoil
+polarization technique. By measuring $\mu_pG_E^p/G_M^p$ and comparing
+it to the previous results, the discovery of any unknown or
+underestimated systematic errors in the previous polarization
+measurements is possible. The first such measurement was done by the
+experiment RSS at Jefferson Lab at $Q^2=1.5$ (GeV/c)$^2$
+\cite{60}. Carrying out the same measurement at higher $Q^2$ values is
+very important to study the consistency of the third technique,
+double-spin asymmetry with the first two techniques, Rosenbluth
+separation and recoil polarization. In this work, the polarized target
+method has been applied at $Q^2$ = 2.06 and 5.66 (GeV/c)$^2$
+%2.20, 5.17, and 6.25 (GeV/c)$^2$ 
+as
+a by-product of the Spin Asymmetries of the Nucleon Experiment
+(SANE)~\cite{164}. 
+% (\textbf{S}pin \textbf{A}symmetries of the \textbf{N}ucleon
+% \textbf{E}xperiment) conducted in Hall C at Jefferson Lab in 2009.  
+
+Section II presents a description of the experimental setup. Section
+III discusses details of the data analysis method, including the
+elastic event selection, raw and physics asymmetry determinations,
+extraction of the proton form factor ratio, $\mu_pG^p_E/G^p_M$, and
+estimation of the systematic uncertainties. Section IV presents the
+final results of the experiment which are discussed in Section V 
+in light of the proton form factor ratio discrepancy. 
+Section VI presents the conclusion with the impact of the
+measurement on the world database of the proton electromagnetic form
+factor ratio.  
+%impact of the measurement on the world database of the proton
+%electromagnetic form factor ratio.  
+
+\section{Experimental Setup}
+
+The experiment SANE (E07-003) is a single-arm inclusive-scattering
+experiment \cite{109, 144, 142, 143, 139, 140}. The goal of SANE was
+to measure the proton spin structure functions $g_1(x, Q^2)$ and
+$g_2(x, Q^2)$ at four-momentum transfer squared 
+%2.5$\textless Q^2 \textless$6.5 (GeV/c)$^2$ 
+$2.5 < Q^2 < 6.5$ (GeV/c)$^2$ 
+and values of the Bjorken scaling variable
+%0.3$ \textless $x$ \textless$0.8, 
+$0.3<x<0.8$, 
+which is an extension of the
+kinematic coverage of experiment RSS performed in Hall C, Jefferson
+Lab \cite{179}.  
+ 
+
+SANE measured the inclusive double spin asymmetries with the target
+spin aligned parallel and nearly perpendicular ($\approx$80$^{\circ}$)
+to the beam direction for longitudinally polarized electron scattering
+from a polarized target~\cite{SANE2017}. 
+%Dynamically Nuclear Polarized (DNP) proton target in form of
+%crystallized ammonia (NH$_3$) \cite{136, 137}.  
+The experiment was carried out in the experimental Hall C at Jefferson
+Lab from January to March, 2009. A subset of the data was used to
+measure the beam-target spin asymmetry from elastic electron-proton
+scattering. 
+%Polarized electrons with energies 4.72 GeV and 5.89 GeV
+%were scattered from the polarized proton target with the spin of the
+%proton aligned nearly perpendicular ($\approx$80$^{\circ}$) to the
+%beam direction.  
+Recoiled protons were detected by the High-Momentum Spectrometer (HMS)
+at $22.3^{\circ}$ and $22.0^{\circ}$, and central momenta of 3.58 and
+4.17 GeV/c, respectively, for the two different beam
+energies. Scattered electrons were detected by the Big Electron
+Telescope Array (BETA) in coincidence with the protons in the HMS.  
+In addition to that configuration, single-arm electron scattering data
+were also taken by detecting the elastically scattered electrons in the
+HMS at a central angle of 15.4$^{\circ}$ and a central momentum of 4.4
+GeV/c for an electron beam energy of 5.89 GeV for both target spin
+configurations
+%, spin perpendicular and parallel to the beam
+%direction. 
+
+The Continuous Electron Beam Accelerator Facility (CEBAF) at the
+Thomas Jefferson National Accelerator Facility delivered longitudinally
+polarized electron beams of up to 6 GeV with $\sim100$ \% duty factor 
+simultaneously to the three experimental halls A, B, and C~\cite{100}. 
+%More information about the CEBAF accelerator can be found in \cite{100}. 
+The CEBAF accelerator has recently been upgraded to 12 GeV with the addition
+of a fourth hall (D)~\cite{12GeV}. The Hall C arc dipole magnets
+were used as a spectrometer to measure the energy of the electron beam
+as it entered the Hall. Using the curvature of the beam over its
+34.4$^{\circ}$ deflection by dipoles and the precise knowledge of the
+arc dipole fields, the energy of the beam entered to the hall is
+determined with an accuracy of $\Delta E/E\sim 10^{-4}$. The beam
+polarization was measured with the Hall C M$\o$ller polarimeter
+\cite{104} and was obtained to be nearly 85\% with a quantum efficiency
+of 1\%. The fast-raster system with a uniform square beam spot of
+$1\times1$ mm$^2$ \cite{101, 102}, 25 meters upstream of the target is
+designed to increase the effective beam size in order to prevent
+damage to the targets due to the high current and very localized
+energy deposit.  
+
+ 
+%Polarized electrons are emitted by illuminating Gallium Arsenide
+%(GaAs) cathode using a circularly polarized laser light with a
+%frequency equal to the energy of the band gap of the
+%material. Jefferson Lab's polarized source uses a superlattice GaAs
+%photocathode, in which the pure GaAs is doped by phosphorous, which
+%delivers an 85\% polarized electron beam with quantum efficiency of
+%1\%.  The orientation of the beam polarization is rotated by a Wien
+%filter before injection into the accelerator to optimize the delivery
+%of longitiudinal polarization to the experimental halls. The
+%photo-emitted electrons are accelerated upto 67 MeV by the injector
+%before entering to the CEBAF linacs. The electron acceleration takes
+%place in superconducting RF-resonant Niobium cavities cooled by super
+%fluid Helium at $\simeq$2 K, giving the maximum energy of
+%approximately 6 GeV. More information about the CEBAF accelerator can
+%be found in \cite{100}. 
+%The beam is rastered to increase its spot size, which spreads the
+%heat load over a wider area of the target.  
+%The Hall C Beam Position Monitors (BPMs) monitor the beam position
+%continously \cite{103}.  
+
+In addition to the standard Hall C beam-line instrumentation, SANE
+required extra beamline equipment to accommodate a polarized
+target. A slow-raster system was added to spread the beam over an even
+larger area of the target material. This second raster was circular,
+with a diameter of 2 cm \cite{105}. Because the raster system rapidly
+changed the actual beam position on the target during the experiment,
+SANE monitored the beam position relative to the beam center by
+recording the raster X and Y amplitudes. The target polarization was
+maintained and oriented with a strong magnetic field. When the target
+magnetic field is nearly perpendicular to the beam, the electron beam
+would be deflected down, away from the target center. To counteract
+this, the beam was sent through a chicane of magnets which bent it
+down and then back upward at the target so that it does not miss the
+center of the target. Even after the beam passed through the target
+center, it would continue to bend downwards, deflecting away from the
+standard beam dump in the Hall. Therefore, an 80-foot-long helium bag
+was used as the beam line from the scattering chamber to the beam
+dump. The exit windows of this beam line were large enough to accept
+the different beam deflections 2.8$^{\circ}$ and 2.2$^{\circ}$ due to
+different beam energies 4.72 and 5.89 GeV, respectively. 
+
+The primary apparatus for the elastic data was based on the
+superconducting High Momentum Spectrometer (HMS), which has a large
+solid angle and momentum acceptance, providing the capability of
+analyzing high momentum particles up to 7.4 GeV/c. The spectrometer is
+equipped with a set of detectors to register and track charged
+particles scattered from the target. In the standard configuration,
+the HMS detector package consists of a pair of gas drift chambers 
+(DC1 and DC2)
+\cite{107}, four planes of scintillator hodoscopes (S1X, S1Y, S2X,
+S2Y) \cite{108}, a gas Cherenkov detector, and a lead-glass
+calorimeter. The two drift chambers provide the particle tracking
+information at the focal plane which is an imaginary plane defined in
+the middle between the two drift chambers. The scintillator hodoscopes are
+used for triggering the detector read-out and provide timing
+information while the gas Cherenkov detector and the lead-glass
+calorimeter provide information for particle identification (PID).  
+
+In order to perform a coincidence experiment with the proton detected
+in HMS, the electron detector required to have a large acceptance to
+match with the proton acceptance defined by the HMS collimator. The
+lead-glass electromagnetic calorimeter, BigCal as a part of BETA,
+provided the needed acceptance with enough energy and angular
+resolution. The calorimeter was assembled by the GEp-III collaboration
+\cite{44, 43}. 
+% It consisted of 1744 type TF1-0 lead-glass bars with an total area
+% of roughly 122$\times$218 cm$^2$. 
+This has a large solid angle of approximately 0.2 sr with the face of
+the calorimeter placed 3.50 m from the target cell. %\cite{106}. 
+In addition to BigCal, BETA consists of Cherenkov counters and scintillating 
+fiber trackers for particle identification (PID) and directional information.  
+%BigCal with additional detectors including Cherenkov and Scintillator
+%trackers, called "BETA" was used for the electron detection in
+%coincidence data. 
+
+%%%%%%%%%%%%%%%%%%%%%
+
+%The liquid helium evaporation refrigerator system kept the target
+%material at 1 K temperature and 
+ As a double polarization experiment, SANE used a polarized proton
+ target in form of crystalized ammonia (NH$_3$). The protons in the
+ NH$_3$ molecules were polarized using Dynamic Nuclear Polarization
+ (DNP)  \cite{136, 137, 138}. The SANE polarized target setup 
+%was operated by the University of Virginia target group. It 
+replaced the standard Hall C
+scattering chamber. The target system consisted of a  target
+insert, a superconducting pair of Helmholtz magnets, a liquid helium
+evaporation refrigerator system and a Nuclear Magnetic Resonance
+(NMR) system. 
+The target insert was roughly 2 m long which provided room for four
+different containers of target materials, in 2.5 cm diameter cups. Two
+cups called \emph{top} and \emph{bottom} were filled with crystalized
+NH$_3$ beads which were used as the proton targets. In addition to the
+crystalized ammonia, $^{12}$C and Polyethylene (CH$_2$) targets were
+also used for detector calibration purposes.  
+The target insert was immersed in a liquid He bath to maintain the
+target material at 1~K temperature, which was cooled down from 4~K by
+pumping off the liquid from the evaporation refrigerator in order to
+optimize the target polarization. The superconducting pair of
+Helmholtz magnets provided 5~T magnetic field in the target region. It
+can be rotated around the target in order to change the target field
+direction and hence the target polarization direction.  
+%The NMR system provided an online target polarization and recorded
+%the operating conditions.  
+
+ 
+%In DNP, polarization transfers between electrons and nuclei can occur
+%spontaneously through electron-nuclear cross relaxation and/or
+%spin-state mixing among electrons and nuclei.  The Zeeman splitting
+%between the Electron Paramagnetic Resonance (EPR) and NMR spins due
+%to the high magnetic field and low temperature, double spin
+%transitions are induced by microwave radiation. 
+
+%These spin transitions, both electron and nucleon spin flips, are
+%forbidden due to the dipole selection rules. Therefore, these
+%transitions are induced by microwave radiation at high magnetic field
+%and low temperature.  
+%In order to form the free, unpaired electrons to use in DNP, ammonia
+%beads were ionized to knock out an atomic hydrogen from NH$_3$
+%molecules to form $dot{N}$H$_2$ paramagnetic centers.  
+%Because of the strong interaction with the lattice, the electrons
+%reach thermal equilibrium very rapidly (in 10$^{-3}$ S) by relaxation
+%to the lowest energy state, allowing it to flip the spin of another
+%proton. However, due to the weak coupling to the lattice, the
+%relaxation time of the nucleons is much larger, $\sim$10$^3$ S. In
+%this way, proton polarizations can be accumulated.  
+
+The spin direction of the polarized proton can be aligned parallel
+(positive polarization) or anti-parallel (negative polarization) to
+the applied field direction by changing the frequency of the
+microwave radiation. The microwave horns were used on each NH$_3$
+target cup for this purpose. Data was taken at both microwave
+frequencies. The NMR coils embedded into the NH$_3$ target cups
+provided an online target polarization and recorded the operating
+conditions. More details on the operation of the target can be found
+in Ref.~\cite{109}. 
+% James Maxwell's thesis \cite{109}. 
+%both positive and negative polarizations can be achieved with the
+%same magnetic field by altering the microwave frequency.  
+%The positive polarization was reached by applying the microwave
+%radiation with a frequency of 140.1 GHz, while the negative
+%polarization was reached by 140.5 GHz.  
+%Choosing $^{14}$NH$_3$ as the polarizable proton target material has
+%several advantages compared to lithium hydride ($^7$LiH and $^6$LiH)
+%which is the other commonly used irradiation doping DNP target
+%material. Its higher maximum achievable polarization (\textgreater 90
+%\% at 1 K and 5 T), the high rate at which it reaches the maximum
+%polarization (\textless 30 minutes), its higher resistance to
+%radiation damage caused by an experimental beam and the high
+%percentage of polarizable nucleons for scatterings, its dilution
+%factor, which is roughly 17.6\% protons fpr $^{14}$NH$_3$, are the
+%crucial properties.  
+%More details on designing and operating solid polarized targets can be
+%found in \cite{137, 136, 138}. 
+
+The beam-target asymmetry, $A_p$ shown in Eq.~(\ref{asym}) is maximal
+when the proton spin is aligned perpendicular to the four-momentum
+transfer direction. However, due to a constraint on the rotation of the
+Helmholtz magnets, the maximum spin direction one could reach was
+80$^{\circ}$ without blocking the BETA acceptance. 
+
+
+\section{Data Analysis}
+
+Standard calibrations for all of the HMS detector components have been
+performed \cite{110}. In addition, a large number of $\pi^0$ events
+were produced in the target. These neutral pions decayed very rapidly
+into two photons. The BigCal energy calibration was done using the
+energy deposited in two separate clusters in BigCal from these two
+photons from $\pi^0$ decay. More details of the BigCal calibration
+method and procedure can be found in appendix D in Ref.~\cite{139}.
+%A. Armstrong's thesis \cite{139}.  
+
+
+The determination of the particle trajectory and momentum at the
+target using the HMS was done in two major steps. The first
+step was to find the trajectory, the positions and angles, $X_{fp}$
+and $\theta_{fp}$ ($Y_{fp}$ and $\phi_{fp}$) in the dispersive
+(non-dispersive) direction at the detector focal plane using the two
+HMS drift chambers.  
+%The focal plane is an imaginary plane defined in the middle between
+%two drift chambers.  
+
+The second step was to reconstruct the target quantities by mapping the
+focal plane coordinates to the target plane coordinates using a
+reconstruction matrix which represents the HMS spectrometer optics based
+on a COSY model \cite{147}. 
+The reconstructed target quantities are $Y_{tar}$, $\phi_{tar}$,
+$\theta_{tar}$ and $\delta$, where $Y_{tar}$ is the horizontal position
+at the target plane perpendicular to the central spectrometer ray,
+$\theta_{tar}$ and $\phi_{tar}$ are the in-plane (non-dispersive) and 
+out-of-plane (dispersive) scattering angles relative to the central ray. 
+The HMS relative momentum parameter, $\delta = (P-P_0)/P_0$, where 
+$P_0$ is the central momentum of the HMS, determines the momentum $P$ of 
+the detected particle.
+%, taking into account the vertical position at the 
+%target location.
+ 
+%From $\delta$, one can determine the measured momentum, P for any detected
+%particle on HMS. 
+%with positive x pointing downwards, y pointing left (towards the beam
+%direction) and z pointing towards the spectrometer. 
+% = (P-P$_0$)/P$_0$ P$_0$ is the spectrometer central momentum,
+% $p_{tar}$ is the reconstructed momentum at the target, 
+
+\subsection{Elastic Event Selection}
+Single-arm electrons were identified in HMS with PID and momentum
+acceptance cuts. The Cherenkov and the lead glass calorimeter in HMS
+were used to discriminate $e^-$ from $\pi^-$, requiring the number of
+photoelectrons seen by the Cherenkov counter $N_{cer} > 2$
+(Cherenkov cut) and the relative energy deposited in the lead glass
+calorimeter, $E_{cal}/P > 0.7$ (calorimeter cut),
+ %and the energy deposited in the lead glass calorimeter, $E_{cal}$,
+ %with respect to the detected electron momentum measured by the HMS
+ %spectrometer, P, $E_{cal}/P\textgreater0.7$, (calorimeter cut), 
+%the background due to $\pi^-$ particles.
+% as shown in Figure \ref{dccalib} [left]. 
+where $P$ is the reconstructed electron momentum in the HMS spectrometer.  
+
+\begin{figure}[b]
+\centering
+\includegraphics[width=\linewidth]{replot4paper_delta}
+\caption{
+  The relative momentum $\delta$ for the single-arm elastic electron 
+  data as a function of invariant mass, $W$.} 
+\label{dccalib}                  
+\end{figure}
+
+%\begin{figure}[b]
+%\centering
+%\begin{tabular}{cc}
+%%\mbox{\includegraphics[scale=0.4]{cer_calo}}
+%%\mbox{\includegraphics[scale=0.25]{replot4paper_cal_cer}}
+%%\mbox{\includegraphics[scale=0.3]{replot4paper_delta}}
+%\mbox{\includegraphics[width=0.5\linewidth]{replot4paper_cal_cer}}
+%\mbox{\includegraphics[width=0.5\linewidth]{replot4paper_delta}}
+%%\mbox{\includegraphics[scale=0.4]{delta}}
+%\end{tabular}
+%%\begin{figure}[b]
+%%\centering
+%%        \begin{subfigure}[b]{0.45\textwidth}
+%%               \centering
+%%               \includegraphics[width=\textwidth]{cer_calo}
+%%                \label{dctime_72994}
+%%      \end{subfigure}
+%%          \begin{subfigure}[b]{0.20\textwidth}
+%%                \centering
+%%               \includegraphics[width=\textwidth]{delta}
+%%                \label{dc_dist}
+%%        \end{subfigure}    
+%%\vspace{-0.4cm}         
+%\caption{\emph{Left}: Cherenkov photo electrons and calorimeter energy
+%  regions for both pions ($\pi^-$) and electrons. The red (green) line
+%  indicates the calorimeter (Cherenkov) cut which was used to separate
+%  electrons. \emph{Right}: The electron relative momentum $\delta$ for
+%  the single-arm elastic electron data as a function of invariant
+%  mass, $W$.} 
+%\label{dccalib}                  
+%\end{figure}
+
+The invariant mass, $W$ of the elastic $ep$ scattering can be written as
+a function of the scattered electron momentum, $P$, angle, ${\theta_{e}}$
+and beam energy, $E$ as  
+\begin{equation}
+\label{W}
+W(P, \theta_e) = M^2 +2M(E-P) - 4 E P \sin^2{\theta_e}/2.
+\end{equation}
+%where $E$ is the incoming electron energy and $M_p$ is the proton
+%mass. 
+Figure~\ref{dccalib} shows the relative momentum
+$\delta$ for the single-arm electron data as a function of invariant
+mass, $W$.  
+The nominal momentum acceptance is given by $-8\% < \delta
+< 10\%$, which is usually applied as a fiducial cut in
+addition to the PID cuts. This eliminates events that are outside of
+the nominal spectrometer acceptance, but end up in the detectors after
+multiple scattering in the magnets or exit windows. Because a
+significant number of elastic events populated the region of larger
+$\delta$ values as, $10\% < \delta < 12\%$, where the
+reconstruction matrix elements are not well known, these data were
+analyzed individually so that the systematic effect from the HMS
+reconstruction matrix could be determined separately. Therefore, two
+$\delta$ regions, $-8\% < \delta < 10\%$ and $10\% < \delta < 12\%$, 
+were used separately in addition to
+the PID cuts to extract the elastic events. About $\sim40\%$ of extra
+elastic events were obtained by using this higher $\delta$ region.  
+
+The elastic events from the coincidence data were selected using both 
+HMS and BigCal quantities.  
+The horizontal (vertical) coordinate of the scattered electron at the entrance
+plane of BigCal, $X_{BETA}$  ($Y_{BETA}$) was measured, and also calculated
+from the proton coordinates reconstructed by HMS, $X_{HMS}$ ($Y_{HMS}$) using 
+elastic kinematics for the known electron beam energy, $E$ and the
+recoil proton angle, $\theta_p$. The recoil proton momentum $P_p$ was
+not used for the kinematic calculation because of its larger
+uncertainty. An elliptic cut was applied to the differences, $\Delta Y =
+(Y_{HMS}-Y_{BETA})$, and $\Delta X = (X_{HMS}-X_{BETA})$, 
+\[
+\left(\frac{\Delta X}{X_{cut}}\right)^2+\left(\frac{\Delta
+      Y}{Y_{cut}}\right)^2 \le 1. \] 
+with $X_{cut}$ and $Y_{cut}$ representing the half axes,
+to reduce the backgrounds most effectively as illustrated
+in Fig.~\ref{xydiff}.  Here, $(X_{cut}, Y_{cut}) = (7, 10)$ cm. 
+
+Based on energy and momentum conservation for electron-proton elastic
+scattering,  the recoil proton momentum, $P_p(\theta_p)$ could
+be calculated from the recoil proton angle, $\theta_p$, as
+\begin{equation} 
+\label{pp}
+P_p(\theta_p)=\frac{2 M E(E + M) \cos
+  {\theta_p}}{M^2+2 M E + E^2 \sin^2{\theta_p}}. 
+\end{equation}
+The residual difference between the proton momentum detected by HMS, $P_p$ 
+and the proton momentum calculated by the recoiled proton angle,
+$P_p(\theta_p)$, expressed as a percentage of the HMS central momentum,
+$P_0$ is given as  
+\begin{equation}
+\label{delta_p}
+{\Delta_p=\frac{P_p - P_p(\theta_p)}{P_0}\times 100.}
+\end{equation}
+The variance of $\Delta_p$ was found to be 0.7$\%$. A $\pm 3\sigma$ cut 
+around the central peak of $\Delta_p$ was chosen for further background
+suppression for the coincidence data. The spectrum of $\Delta_p$ is shown
+in Fig.~\ref{Delta_p}.
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{replot4paper_xydiff5}
+\caption{The elliptical cut (red) with $(X_{cut},Y_{cut})=(7,10)$ cm applied 
+to the $\Delta Y$ vs $\Delta X$ distributions at $Q^2 = 6.26$ (GeV/c)$^2$.}
+\label{xydiff}
+\end{figure}
+
+\begin{figure}[hb]
+\centering
+\includegraphics[width=\linewidth]{replot4paper_dp_cut5}
+\caption{The $\Delta_p$ spectrum of all coincidence events at $Q^2=6.26$
+(GeV/c)$^2$ after applying the elliptical cut.} 
+\label{Delta_p}
+\end{figure}
+
+%\begin{figure}[b]
+%\centering
+%\begin{tabular}{cc}
+%%\mbox{\includegraphics[scale=0.3]{xydiff5}}
+%%\mbox{\includegraphics[scale=0.3]{dp_cut5}}
+%\mbox{\includegraphics[width=0.5\linewidth]{replot4paper_xydiff5}}
+%\mbox{\includegraphics[width=0.5\linewidth]{replot4paper_dp_cut5}}
+%\label{xydiff}
+%\end{tabular}
+%%\begin{figure}[htbp]
+%%\centering
+%%        \begin{subfigure}[htbp]{0.49\textwidth}
+%%               \centering
+%%               \includegraphics[width=\textwidth]{xydiff5}
+%%                \label{xdiff}
+%%      \end{subfigure}
+%%          \begin{subfigure}[htbp]{0.49\textwidth}
+%%                \centering
+%%               \includegraphics[width=\textwidth]{dp_cut5}
+%%                \label{ydiff}
+%%        \end{subfigure}    
+%\caption{\emph{Left}: The Elliptical cut (red) with
+%  $(X_{cut},Y_{cut})=(7,10)$ cm applied to the $\Delta Y$ vs $\Delta
+%  X$ distributions at $Q^2=6.26$ (GeV/c)$^2$. \emph{Right}: The
+%  $\Delta_p$ spectrum of all coincidence events at $Q^2=6.26$
+%  (GeV/c)$^2$ after applying the elliptical cut.} 
+%\label{xydiff}                  
+%\end{figure}
+
+%The reconstructed target X position, $X_{tar}$ offsets relative to
+%the beam center were determined for the measured data based on
+%data-to-Monte Carlo simulation comparisons for both single-arm and
+%coincidence data.  
+
+
+\subsection{Corrections to Event Reconstruction}
+
+The presence of the target magnetic field affects the electron and proton
+trajectories.
+The standard matrix elements for $\delta$ and $\phi_{tar}$ take 
+the vertical position of the beam at the target into account, hence the 
+determinations of $\delta$ and of the out-of-plane angle, $\phi_{tar}$ are 
+sensitive to a vertical beam position offset.  
+The slow-raster system would vary the vertical position about its assumed 
+average value.
+The HMS optics matrix has been determined originally without the
+presence of a target magnetic field. Therefore, an additional particle
+transport through the target magnetic field has been added to the
+existing HMS particle-tracking algorithm to account for the additional
+particle deflection due to the target magnetic field. The treatment
+of this additional particle transport was developed in an iterative
+procedure. First, the particle track was reconstructed to the target
+from the focal plane quantities by the standard HMS reconstruction
+coefficients, assuming no target magnetic field but a certain vertical beam
+position. Using these target coordinates, the particle track was linearly 
+propagated forward to the field-free region at 100~cm from the target center 
+and then transported back to the target plane through the known target magnetic
+field, to determine the newly tracked vertical position. If the difference 
+between the newly tracked vertical position at the target center and the 
+assumed vertical position of the beam was observed then a new effective 
+vertical position was assumed and the procedure was iterated until 
+the difference 
+between the tracked and assumed vertical positions became less than 
+1 mm~\cite{142}.  
+
+Comparisons of data and Monte Carlo simulation (MC)
+%The data-to-Montecarlo simulation comparisons 
+were used to determine
+the target vertical and horizontal position offsets relative to the
+beam center.  
+In MC, events were generated at assumed positions of the target and 
+transported through the target magnetic field to an imaginary plane ouside 
+the field region. Then they were reconstructed back to the target using the 
+standard HMS optics matrix. 
+In the data, however, the events were reconstructed to the target
+positions using the same HMS optics matrix without the knowledge of 
+the target offsets.
+The target horizontal position offset, $X_{off}$, was determined by comparison 
+of data to Montecarlo simulation yields for the reconstructed horizontal
+position at the target, $Y_{tar}$. 
+In the single-arm data, the $ep$ invariant mass $W$ elastic peak was 
+slightly correlated with $\phi_{tar}$ as in Fig.~\ref{xoff_chk} (left). 
+Because both $\phi_{tar}$ and $\delta$ have first-order dependences on the 
+vertical positions of the target in the reconstruction matrix element, the 
+vertical beam position deviation from the target center, $Y_{off}$, can 
+have effects on the reconstructed $\phi_{tar}$ as well as $\delta$ and
+hence $P$. This sensitivity caused the correlation of $\phi_{tar}$ with 
+the invariant mass, $W$ as seen in Fig.~\ref{xoff_chk} (left). 
+
+%This has investigated by generating the same correlation using Monte
+%Carlo simulation.   
+%The X position offset determined by the Monte Carlo simulation was
+%re-checked by looking at the correlation between the reconstructed
+%target out-of-plane angle, $\phi_{tar}$ and the invariant mass, $W$.  
+%In MC, events were generated at a given horizontal position at the
+%target, transport them to an imaginary plane and then use the HMS
+%optics to reconstruct back to the same position at the
+%target. However, in the data, the events were reconstructed to the
+%target horizontal position, $y_{tar}$ using the HMS optics matrix
+%without knowing the exact event generated positions at the target. 
+% If the $y_{tar}$ is not the same as the start position of the
+% particle, the data will show a correlation between $\phi_{tar}$ and
+% $W$.  
+
+The same correlation can be reproduced by the Monte Carlo simulation by
+reconstructing the particle to a different vertical position than from
+where it was generated. The Montecarlo generated correlation is shown
+in Fig.~\ref{xoff_chk} (right). 
+Reproduction of the $\phi_{tar}$ vs $W$ correlation in MC generates
+confidence that the same correlation seen in the data are due to the
+reconstruction of the particle track to the incorrect vertical target
+position. Therefore, the target vertical position offsets relative to
+the beam center were introduced and determined for the measured data
+by data-to-Monte Carlo simulation comparisons. This has been a very suitable
+method to re-check the target vertical position offsets for the
+polarized target experiments.  
+
+\begin{figure}[b]
+\centering
+\begin{tabular}{cc}
+\mbox{\includegraphics[width=\linewidth]{single_corr}}
+%\mbox{\includegraphics[scale=0.4]{}}
+\end{tabular}
+%\begin{figure}[b]
+%\centering
+%        \begin{subfigure}[b]{0.45\textwidth}
+%               \centering
+%               \includegraphics[width=\textwidth]{cer_calo}
+%                \label{dctime_72994}
+%      \end{subfigure}
+%          \begin{subfigure}[b]{0.20\textwidth}
+%                \centering
+%               \includegraphics[width=\textwidth]{delta}
+%                \label{dc_dist}
+%        \end{subfigure}    
+%\vspace{-0.4cm}         
+\caption{The correlation of $\phi_{tar}$ with $W$ for single-arm
+  electron data  on HMS (left) and the same generated for MC (right).} 
+\label{xoff_chk}                  
+\end{figure}
+  
+ Similarly, correlations of the HMS quantities $\phi_{tar}$ vs
+ $\Delta_p$ and the BETA quantities, $\Delta$Y vs $Y_{BETA}$ were also
+ observed in the coincidence data, as seen in Fig.~\ref{coin_corr}. 
+ Since all of these correlations are related to the
+ vertical position or angle, a correction of out-of-plane angle due to
+ the target magnetic field was considered the best
+ explanation. Subsequently, all these correlations were re-produced by
+ the Monte Carlo simulation and corrected by applying an azimuthal
+ angle dependence to the target magnetic field.  
+% In addition, for the coincidence data, $\Delta_p$ had a dependence
+% on $\phi_{tar}$ as in Figure \ref{coin_corr} (left) and  $Y_{BETA}$
+% had a dependence on $\Delta Y$ as in Figure \ref{coin_corr}
+% (right). Because the reconstruction matrix element, $\delta$ takes
+% into account the vertical position of the beam at the target, the
+% detected momentum at the HMS spectrometer, P and hence $\Delta_p$
+% and out-of-plane angle, $\phi_{tar}$ sensitive to the vertical beam
+% position. 
+ The so-determined azimuthal angle dependence was added to the target
+ field map which was finally used for the reconstruction of particle 
+ tracks to the target center. 
+ That changed the particles reconstructed momentum
+ and, therefore, the reconstructed vertical position, which eliminated
+ the above dependencies.  
+
+\begin{figure}[b]
+\centering
+\begin{tabular}{cc}
+%\mbox{\includegraphics[width=0.5\linewidth]{coin1.pdf}}
+%\mbox{\includegraphics[width=0.5\linewidth]{coin2.pdf}}
+\includegraphics[width=\linewidth]{coin1.pdf}
+\end{tabular}
+\begin{tabular}{cc}
+\includegraphics[width=\linewidth]{coin2.pdf}
+\end{tabular}
+%\begin{figure}[b]
+%\centering
+%        \begin{subfigure}[b]{0.45\textwidth}
+%               \centering
+%               \includegraphics[width=\textwidth]{cer_calo}
+%                \label{dctime_72994}
+%      \end{subfigure}
+%          \begin{subfigure}[b]{0.20\textwidth}
+%                \centering
+%               \includegraphics[width=\textwidth]{delta}
+%                \label{dc_dist}
+%        \end{subfigure}    
+%\vspace{-0.4cm}         
+\caption{The correlation of the HMS quantities,  $\phi_{tar}$ vs
+  $\Delta_p$ (\emph{Top}) and the correlation of the BETA quantities,
+  $\Delta Y$ vs $Y_{BETA}$ (\emph{Bottom}) for the coincidence data.} 
+\label{coin_corr}                  
+\end{figure}
+
+%\emph{Left}: The correlation of the HMS quantities $\phi_{tar}$ vs
+% $\Delta_p$.  
+%\emph{Right}: The correlation of the BETA quantities,  $\Delta Y$ vs
+%$Y_{clust}$ in the coincidence data. 
+
+\subsection{Raw/ Physics Asymmetries} %done up to here
+The measured double polarization raw asymmetries of the extracted
+elastic events were formed by,  
+%scattering of polarized electrons from a transversely polarized
+%target, the beam-target asymmetry, 
+\begin {equation}
+%\begin {aligned}
+\label {rasym}
+A_{raw}=\frac{N^+-N^-}{N^++N^- }, 
+%\end {aligned}
+\end {equation}                            
+where $N^+$ and $N^-$ are the raw elastic yields normalized by the
+dead time corrected charge. They are defined by
+$N^+=N^{\uparrow\uparrow} +  N^{\downarrow\downarrow}$ and
+$N^-=N^{\uparrow\downarrow} +  N^{\downarrow\uparrow}$, where the
+first index refers to the beam helicity and the second index refers to
+the target polarization.  
+
+The physics asymmetry,
+\begin {equation}
+%\begin {aligned}
+\label {pasym}
+A_p=\frac{A_{raw}}{P_B P_Tf} +N_c
+%\end {aligned}
+\end {equation}                 
+was obtained by dividing the $A_{raw}$ by target and beam
+polarizations, $P_T$ and $P_B$, and the dilution factor, $f$.  
+
+The dilution factor is the ratio of the yields of scattering off free
+protons to that from the entire target. The $N_c$ term is a correction
+to the measured raw asymmetry to account for the quasi-elastic
+scattering contribution to the polarized $^{14}N$ which was considered to
+be negligible \cite{60}. 
+
+%The dilution factor is the ratio of the yields of scattering off free
+%protons to that from the entire target. The $N_c$ term is a
+%correction term to the measured asymmetry to account for the
+%contribution from quasi-elastic scattering off polarized $^{15}N$
+%under the elastic peak. Because SANE used $^{14}NH_3$ (ammonia), the
+%correction by $N_c$ for polarized $^{14}N$ was negligible \cite{60}. 
+
+%The electron single-arm data and the coincidence data were analyzed
+%separately. For the single-arm electron data, after applying a
+%relative momentum acceptance cut of $-8\%$ to $+10\%$ for the HMS
+%spectrometer, and particle identification cuts on the data, elastic
+%events were extracted. By knowing the incoming beam energy, $E$ and
+%measuring the scattered electron angle, $\theta_e$, and scattered
+%electron energy, $E'$ by the HMS spectrometer, the invariant mass,
+%$W$ has been calculated for the extracted elastic event. 
+% \begin{equation}
+%\label{wmass}
+%W^2=M^2-Q^2+2M(E-E')
+%\end{equation}
+%where the four-momentum transfer squared, $Q^2$ is determined as;
+% \begin{equation*}
+%\label{eq} 
+%E'=\sfrac{E}{\left[{1+\frac{2E\sin^2{\left({\frac{\theta_e}{2}}\right)}}{M}}\right]},
+%\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,  
+%Q^2=4EE'\sin^2\left(\frac{\theta_e}{2}\right) 
+%\end{equation*}
+%using elastic kinematics.
+
+%SANE target insert was consisted of 2 cups called \emph{top} and
+%\emph{bottom} as the proton target.  
+The ratio of the volume taken by the ammonia crystals to the entire
+target cup volume is known as the \emph{packing fraction}, which was
+determined by normalizing the measured data with the simulated
+yields. The different packing fractions give rise to the different
+target material contributions inside the target cup. More details
+about the packing fraction determination can be found in Ref.~\cite{140}.
+%H. Kang's thesis \cite{140}. 
+Both target cups were used during the data
+taking, the packing fractions were determined on top target as
+55$\pm$5$\%$ and bottom target as 60$\pm$5$\%$.  
+
+%and therefore the different dilution factors which were determined
+%for each target cup separately.  
+
+%Figure \ref{mc}(left) shows a comparison of simulated target
+%contributions with the elastic data for the bottom target.  
+
+The dilution factor represents the fraction of polarizable material
+in the beam, from which electrons can scatter. 
+The SANE target was immersed in a liquid He bath, hence 
+electron scattering can occur from all the materials inside the
+target cup, as well as from all the materials in the beam path toward the
+target cup which are H, N, He and Al. Contributions from Al arise from
+the target cup lids, the 4 K shield and the refrigerator's
+tailpiece. In addition to the electron scattering off from the protons
+in H, the  background contributions rise from the additional target
+cup materials, N, He and Al needed to estimate. A Monte Carlo
+simulation was used to estimate these backgrounds in order to determine 
+the dilution factor, $f$. The weighted amount of target materials inside
+each target cup were calculated, taking into account the packing
+fraction. The scattering yields due to H, N, He and Al
+were simulated using their individual cross sections and compared with
+the single-arm elastic data to estimate the backgrounds. The simulated
+target contributions for the top target for the two different $\delta$
+regions are shown in Fig.~\ref{trg_cont} (left column).  
+
+%%%%
+
+The dilution factors were calculated for both \emph{top} and
+\emph{bottom} targets by taking the ratio of the difference between
+the total raw yields and the Monte Carlo background yields (N+He+Al)
+to the total raw yield,    
+\begin{equation}
+\label{dfsin}
+f=\frac{Y_{data}-Y_{MC}}{Y_{data}},
+\end{equation}
+
+where $Y_{data} = N_+ + N_-$ is the total raw yield of the measured data and
+$Y_{MC}$ is the total Monte Carlo background yield from N, He,
+and Al. The obtained dilution factors are shown in Fig.~\ref{trg_cont} 
+(middle) for the top target for two different $\delta$
+regions. The dilution factor is the largest in the elastic region
+where $0.91 < W < 0.97$ GeV/c$^2$. 
+
+%\begin{figure*}
+%\centering
+%\begin{tabular}{cc}
+%\includegraphics[width=0.32\linewidth]{trg_cont810}
+%\includegraphics[width=0.32\linewidth]{trg_cont1012}
+%\includegraphics[width=0.34\linewidth]{reldf}
+%\end{tabular}
+%%\begin{figure}[htbp]
+%%\centering
+%%        \begin{subfigure}[htbp]{0.31\textwidth}
+%%               \centering
+%%               \includegraphics[width=\textwidth]{trg_cont810}
+%%                \label{trg_cont810}
+%%      \end{subfigure}
+%%          \begin{subfigure}[htbp]{0.31\textwidth}
+%%                \centering
+%%               \includegraphics[width=\textwidth]{trg_cont1012}
+%%                \label{trg_cont1012}
+%%        \end{subfigure}   
+%%           \begin{subfigure}[htbp]{0.34\textwidth}
+%%                \centering
+%%               \includegraphics[width=\textwidth]{reldf}
+%%                \label{reldf}
+%%        \end{subfigure}         
+%%\vspace{-0.4cm}         
+%\caption{The simulated target contributions at the elastic peak
+%  compared to the data as a function of $W$ for both $\delta$ regions,
+%  $-8\% < \delta < 10\%$ (\emph{left}) and $10\% < \delta < 12\%$ 
+% (\emph{center}) for the top
+%  target. Different colors show different target type
+%  contributions. \emph{Right}: The dilution factors inferred from simulated
+%  yields as a function of $W$ for $-8\% < \delta < 10\%$
+%  (\emph{top}) and $10\% < \delta < 12\%$
+%  (\emph{bottom}) for the same data set.} 
+%\label{trg_cont}                  
+%\end{figure*}
+
+%%%%%%%%
+\begin{figure*}
+\centering
+\begin{minipage}[]{0.49\textwidth}
+\includegraphics[width=\linewidth]{trg_cont810}\\
+\includegraphics[width=\linewidth]{reldf_8_10}\\
+\includegraphics[width=\linewidth]{Ap_8_10}
+\end{minipage}
+\begin{minipage}[]{0.49\textwidth}
+\includegraphics[width=\linewidth]{trg_cont1012}\\
+\includegraphics[width=\linewidth]{reldf_10_12}\\
+\includegraphics[width=\linewidth]{Ap_10_12}
+\end{minipage}
+%\begin{minipage}[]{0.42\textwidth}
+%\includegraphics[width=\linewidth]{replot4paper_apsingle}
+%\end{minipage}
+\caption{
+  Yields, dilution factor, and physics asymmetries as a function of $W$
+  for $-8\% < \delta < 10\%$ (\emph{left column}) and $10\% < \delta < 12\%$ 
+  (\emph{right column}). 
+  \emph{Top row}: The simulated target contributions at the elastic peak
+  compared to the data as a function of $W$ for the top target.
+  Different colors show different target type contributions to the yield. 
+  \emph{Middle row}: The dilution factors inferred from simulated
+  yields as a function of $W$ for the top target.
+  \emph{Bottom row}:
+  The resulting physics asymmetries for the top and bottom targets as a 
+  function of $W$.}
+\label{trg_cont}                  
+\end{figure*}
+%%%%%%%
+
+The physics asymmetry, $A_p$, was evaluated for the selected elastic
+events using Eq.~(\ref{pasym}) for average values of $P_B=73 \pm 1.5
+\% $, $P_T=70 \pm 5.0\%$, and by normalizing with the dilution factor,
+$f$. Figure~\ref{trg_cont} (\emph{right}) shows the physics
+asymmetries for the top and bottom targets and for the two different
+$\delta$ regions, as a function of $W$. The physics asymmetries were
+constant in the elastic region of $0.91 < W < 0.97$ GeV/c$^2$ 
+where the dilution factor is the largest, which supports that the functional
+dependence of $f$ on $W$ as in Fig.~\ref{trg_cont} (middle) is accurate. 
+The average physics asymmetries and uncertainties of this constant region were
+determined for both targets and $\delta$ regions using an
+error-weighted mean of the $W$ bins in the interval of 0.91\textless
+W\textless0.97 GeV/c$^2$. The weighted average $A_p$ was obtained for
+each $\delta$ region by combining the average physics asymmetries from
+both top and bottom targets. The weighted average asymmetry results are shown 
+in Fig.~\ref{physasym} (\emph{left}), and are listed in 
+Tab.~\ref{tabasym} (\emph{left half}). 
+ 
+%\begin{figure}[b]
+%\centering
+%\begin{tabular}{cc}
+%\mbox{\includegraphics[width=0.54\linewidth]{replot4paper_apsingle}}
+%\mbox{\includegraphics[width=0.44\linewidth]{replot4paper_apsingletb_onlyavg}}
+%\end{tabular}
+%%\begin{figure}[htbp]
+%%\centering
+%%        \begin{subfigure}[htbp]{0.49\textwidth}
+%%               \centering
+%%               \includegraphics[width=\textwidth]{apsingle}
+%%                \label{apsingled}
+%%      \end{subfigure}
+%%          \begin{subfigure}[htbp]{0.5\textwidth}
+%%                \centering
+%%               \includegraphics[width=\textwidth]{apsingletb}
+%%                \label{apsingletb}
+%%        \end{subfigure}    
+%\caption{(\emph{Left}): The top (red) and bottom (blue) target physics
+%  asymmetries and their weighted average physics asymmetry in the
+%  elastic region (black) for the two different delta regions $-8\%
+%  \textless \delta \textless 10\%$ (\emph{top}) and $10\% \textless
+%  \delta \textless 12\%$ (\emph{bottom}) as a function of W.  
+%(\emph{Right}): The weighted average physics asymmetries for two
+%different $\delta$ regions as a function of $Q^2$. The expected
+%physics asymmetries from the known form factor ratio for each $Q^2$ by
+%Kelly's form factor parametrization \cite{99} are also shown by dashed
+%lines separately for the two different $\delta$ regions.} 
+%\label{apsinglearm}                  
+%\end{figure}
+
+%The simulated H contents assuming the H cross section is also
+%normalized using the data-to- C MC normalization factor  determined
+%for the region of 0.03\textless$\delta$\textless0.08 
+
+%The weighted amount of H inside the target cup were calculated taking
+%into account the packing fraction and used it to simulate the H
+%contributions. By adding the normalized carbon background to the
+%simulated H,  
+For the coincidence data, the Monte-Carlo simulation was generated using 
+the known C and H cross sections. The background shape under the elastic
+peak was determined by normalizing the C background to the data for
+the region of $0.03 < \Delta_p < 0.08$ where the data and
+the background distributions match each other.   
+A comparison between the measured data and the simulated yields is
+shown in Fig.~\ref{apcoin}.   
+Because of low statistics, the dilution factor $f$ for the coincidence data 
+was not calculated as a function of $W$ (or $\Delta_p$) as done for 
+elastic single-arm data. Instead, the average dilution factor was 
+determined by an integration method using the
+normalized carbon MC yields and the measured data yields under the
+elastic peak  in the interval of  $| \Delta_p | \textless $0.02 $(3 \sigma)$ 
+and then by using Eq.~(\ref{dfsin}). The procedure was done separately for
+both beam energies 5.895 GeV and 4.725 GeV. The average dilution
+factors based on the integration method for the top and bottom targets
+for the beam energy of 5.895 GeV were determined as
+$f = 0.785 \pm 0.039$ and $0.830 \pm 0.042$, respectively. Only the
+\emph{bottom} target was used for 4.725 GeV and the dilution factor
+was determined as $f = 0.816 \pm 0.041$. 
+%The coincidence data for the beam energy of 4.73 GeV was obtained
+%only using the bottom target. Therefore, the average dilution factor
+%based on the integration method for the bottom target for the beam
+%energy of 4.73 GeV was determined as $f=$0.816$\pm$0.041.  
+%The physics asymmetries, $A_p$ were evaluated for the coincidence
+%data using Eq. (\ref{pasym}) for each dilution factors.  
+
+The weighted average physics asymmetry and uncertainty between the
+\emph{top} and \emph{bottom} targets for the beam energy of 5.895 GeV
+were obtained as $A_p = 0.083 \pm 0.074$, while that for the beam
+energy of 4.725 GeV resulted in $A_p = 0.248 \pm 0.138$. 
+
+
+Figure~\ref{physasym} (\emph{right}) shows the extracted weighted average
+physics asymmetries for both beam energies for the coincidence
+data. The results are shown in Tab.~\ref{tabasym} (\emph{right half}). 
+
+\begin{figure}[b]
+\centering
+\includegraphics[width=\linewidth]{cnorm_5}
+\caption{\emph{Left}: The normalized carbon background (green) and H
+  (blue) comparison to the coincidence data (red) for the beam energy
+  5.895 GeV. } 
+\label{apcoin}                  
+\end{figure}
+
+%\begin{figure}[b]
+%\centering
+%\begin{tabular}{cc}
+%\mbox{\includegraphics[width=0.50\linewidth]{cnorm_5}}
+%\mbox{\includegraphics[width=0.48\linewidth]{simc_ap_onlyavg}}
+%\end{tabular}
+%%\begin{figure}[htbp]
+%%\centering
+%%        \begin{subfigure}[htbp]{0.46\textwidth}
+%%               \centering
+%%               \includegraphics[width=\textwidth]{cnorm_5}
+%%                \label{apsingled}
+%%      \end{subfigure}
+%%          \begin{subfigure}[htbp]{0.39\textwidth}
+%%                \centering
+%%               \includegraphics[width=\textwidth]{simc_ap}
+%%                \label{apsingletb}
+%%        \end{subfigure}    
+%\caption{\emph{Left}: The normalized carbon background (green) and H
+%  (blue) comparison to the coincidence data (red) for the beam energy
+%  5.895 GeV. \emph{Right}: The weighted average physics asymmetries
+%  for the two beam energies 4.725 GeV (blue) and  5.895 GeV (red) are
+%  shown. The dashed lines are the expected values of the physics
+%  asymmetries for the two beam energies calculated from the known form
+%  factor ratio for each Q$^2$ bin by Kelly's form factor
+%  parametrization \cite{99}.} 
+%\label{apcoin}                  
+%\end{figure}
+
+
+
+\begin{figure}[b]
+\centering
+\begin{tabular}{cc}
+%\mbox{\includegraphics[width=0.44\linewidth]{replot4paper_apsingletb_onlyavg}}
+%\mbox{\includegraphics[width=0.48\linewidth]{simc_ap_onlyavg}}
+\includegraphics[width=\linewidth]{Ap_Q2_Single_Coin}
+\end{tabular}
+\caption{
+(\emph{Left}): The weighted average physics asymmetries for two
+different $\delta$ regions as a function of $Q^2$. The expected
+physics asymmetries from the known form factor ratio for each $Q^2$ by
+Kelly's form factor parametrization \cite{99} are also shown by dashed
+lines separately for the two different $\delta$ regions.
+\emph{Right}: The weighted average physics asymmetries
+  for the two beam energies 4.725 GeV (blue) and  5.895 GeV (red) are
+  shown. The dashed lines are the expected values of the physics
+  asymmetries for the two beam energies calculated from the known form
+  factor ratio for each Q$^2$ bin by Kelly's form factor
+  parametrization \cite{99}.} 
+\label{physasym}                  
+\end{figure}
+
+\subsection{Extraction of the \boldmath $G^p_E/G^p_M$ Ratio}
+ 
+%The beam-target asymmetry, $A_p$ for elastic electron-proton
+%scattering directly relates to the proton elastic form factor ratio,
+%$G_E^p/G_M^p$ for a known target spin orientation as in Equation
+%\ref{asym}. Therefore, using Equation \ref{asym}, $G_E^p/G_M^p$ can
+%be determined directly from $A_p$ using the formula: 
+One can extract $\mu_p G_E^p/G_M^p$ for a kown target spin orientation
+from the beam-target asymmetry in Eq.~(\ref{asym}) by solving for R. 
+
+% \begin{eqnarray}
+%\label{gegm}
+%\frac{G_E^p}{G_M^p}&=&-\frac{b}{2A_p}\sin \theta^* \cos \phi^*\\ 
+%& & +
+%\sqrt{\frac{b^2}{4A_p^2}\sin^2\theta^*\cos^2\phi^*-\frac{a}{A_p}\cos
+%\theta^*-c}\nonumber 
+%\end{eqnarray}
+
+% \begin{equation}
+% \begin{aligned}
+%\label{btasym}
+%A_p=\frac{-br\sin \theta^* \cos \phi^*-a\cos \theta^* }{r^2+c},
+% \end{aligned}
+% \end{equation}
+%where $r=G_E^p/G_M^p$, and $\theta^*$ and $\phi ^*$ are the polar and
+%azimuthal-angles between the momentum transfer vector, $\vec{q}$ and
+%the proton's spin vector.  
+%The kinematic factors are given by,
+% \begin{equation}
+% \begin{aligned}
+%\label{btasymabc}
+%&a=2 \tau \tan \frac{\theta_e}{2}\sqrt{1+\tau+(1+\tau)^2\tan^2
+%\frac{\theta_e}{2}}\\ 
+%&b=2 \tan \frac{\theta_e}{2}\sqrt{\tau(1+\tau)}\\
+%&c=\tau+2\tau(1+\tau)\tan^2\frac{\theta_e}{2}
+%\end{aligned}
+% \end{equation}
+%with $\tau=\frac{Q^2}{4M^2}$. 
+
+The four-momentum transfer squared, $Q^2(E, E', \theta_e)$ can be
+obtained for elastic events from $\theta_e$ or $E'$ alone. 
+Since $Q^2$ from $\theta_e$
+is more accurate than $Q^2$ from $E'$, $Q^2$ we used the electron angle 
+$\theta_e$ to calculate $Q^2$ for already selected elastic events and 
+found to agree with the $Q^2$ distribution from the Monte Carlo simulation 
+yields. %The difference between 
+%the data and the simulated $Q^2$ distribution was obtained and t
+The mean value of the $Q^2$ distribution was used to calculate $\tau$ which 
+is used in the terms $a,b,c$ in Eq.~(\ref{asym}).  
+The mean of the detected (or calculated using elastic kinematics of
+the proton in HMS) electron scattering angle, $\theta_e$ was
+determined by the $\theta_e$ distribution for the selected electrons
+on single-arm (coincidence) data. The polar and azimuthal angles,
+$\theta^*$ and $\phi ^*$ were calculated as
+ \begin{eqnarray}
+% \begin{aligned}
+\label{thetastar}
+\theta^*&=&\arccos (-\sin \theta_q\cos\phi_e\sin\beta+\cos\theta_q\cos
+\beta) \\ 
+%\end{equation}
+%\begin{equation}
+%\label{phistar}
+\phi^*&=&-\arctan\left(\frac{\sin \phi_e \sin \beta}{\cos \theta_q
+    \cos \phi_e \sin \beta + \sin \theta_q \cos
+    \beta}\right)+180^{\circ} \nonumber. 
+%\end{aligned}
+\end{eqnarray}
+
+The out-of-plane angle of the scattered electron at the target plane,
+$\phi_e$ is the mean of the detected $\phi_e$ distribution for the
+elastic events. The three-momentum transfer vector, $\vec{q}$ points
+at an angle $\theta_q$, which is identical with the elastically
+scattered proton angle, and is measured event-by-event for the
+elastic kinematics of the electron (proton) in the HMS. The mean value
+of the $\theta_q$ distribution was used in Eq.~(\ref{thetastar}). The
+target magnetic field direction was oriented with $\beta$=$80^{\circ}$
+toward the BETA detector package from the beam line direction
+within the horizontal plane. The distribution of $\phi^*$ arises from the 
+$\phi_e$ acceptance distribution. If $\phi_e=0$ then $\phi^*=0^{\circ}$ for
+single-arm data and $\phi^* = 180^{\circ}$ for coincidence data.  
+
+The physics asymmetries $A_p$, and the extracted proton form factor
+ratios, $R=G_E^p/G_M^p$ together with the average kinematic parameters
+for both single-arm and coincidence data are shown in Tab.~\ref{tabasym}. 
+   \begin{table*}
+%   \centering
+   \begin{tabular}{|l|c|c|c|c|} 
+      \hline 
+         & \multicolumn{2}{c|}{single-arm} & \multicolumn{2}{c|}{Coincidence} \\
+      \hline
+         & $-8\% \textless \delta \textless 10\%$ & $10\% \textless \delta \textless 12\%$ & \multicolumn{2}{c|}{} \\
+      \hline
+       $E$            (GeV)                   & 5.895        & 5.895       &  5.893     &     4.725   \\
+      $\theta_q$ (Deg)            &   44.38      &   46.50     &   22.23     &    22.60   \\
+      $\phi_q$    (Deg)              & 171.80      & 172.20     & 188.40    &  190.90   \\      
+      $\theta_e$ (Deg)            &   15.45      &   14.92     &    37.08    &     43.52  \\      
+      $\phi_e$    (Deg)               & 351.80      & 352.10     &       8.40   &     10.95  \\
+      $Q^2$ (GeV/c)$^2$           &      2.20      &      1.91    &       6.19   &        5.14  \\
+      $\theta^*$ (Deg)            &     36.31    &    34.20    &  101.90   &     102.10 \\
+      $\phi^*$ (Deg)                &   193.72    &  193.94    &       8.40   &       11.01 \\
+      $A_p\pm \delta A_p$         & $-0.205 \pm 0.018$ & $-0.139 \pm 0.026$ & $0.083 \pm 0.074$ & $0.248 \pm 0.138$\\
+      $\mu_p R \pm \delta (\mu_p R)$  & $0.576 \pm 0.217$  & $0.973 \pm 0.298$  & $0.439 \pm 0.411$   &  $-0.379\pm 0.690$\\
+      \hline
+      $\mu_p R$ (expected)            & $0.73$     & $0.78$      & $0.305$   &  $0.38$ \\
+      $A_p$ (expected)                 & $-0.186$ & $-0.171$  & $0.107$   &  $0.097$\\
+      \hline    
+      \end{tabular}
+   \caption{The experimental parameters together with the physics
+     asymmetries and the extracted form factor ratios $\mu_p R =
+     \mu_p G_E^p/G_M^p$ for both
+     single-arm and coincidence data. The expected ratio $\mu_p R$
+     from Kelly's form factor parametrization \cite{99} for each $Q^2$
+     and the calculated asymmetry $A_p$ from the expected $\mu_p R$ are
+     also shown. The errors $\delta A_p$ and $\delta(\mu_p R)$ are
+     statistical.} 
+   \label{tabasym}
+   \end{table*}
+
+\subsection{Systematic Error Estimation}
+
+The systematic error of the form factor ratio $G_E^p/G_M^p$, $\Delta
+(G_E^p/G_M^p)$ was determined by propagating the errors from the
+experimental parameters to the physics asymmetry, $\Delta A_p$.  
+
+The errors arising from the kinematic quantities were estimated by 
+varying each quantity, one at a time by its corresponding uncertainty
+($\delta E = 0.05$\% for the beam energy, $\delta P = 0.1$\% for the
+central momenta, and $\delta \theta_{e} = 0.5$ mrad for the spectrometer
+angle), and by propagating these errors to a Monte Carlo extracted
+$G_E^p/G_M^p$ ratio. The resulting difference between the extracted
+$G_E^p/G_M^p$ ratio from the value at the nominal kinematics and the
+value shifted by the kinematic uncertainty was taken as the contribution
+to the systematic uncertainty in the $G_E^p/G_M^p$ ratio due to that
+quantity. In general, the uncertainties due to the kinematic
+variables, $E, E'(= P)$ and $\theta_e$ are less than 1\%.  
+
+Using the Jacobian of the elastic electron-proton reaction, the error
+on the momentum transfer angle, $\delta \theta_q$ was obtained from
+$\delta$E and the $\delta \theta_e$ and estimated as
+$\delta\theta_q = 0.03^{\circ}$. In addition, by assuming an error of
+the target magnetic field direction of $\delta \beta=0.1^{\circ}$, the
+uncertainties of $\theta^*$ and $\phi ^*$ were estimated to be $\delta
+\theta^* = 1.22$ mrad and $\delta \phi^* = 0.3$ mrad. The error of
+$G_E^p/G_M^p$ from the $\delta \theta^*$ was determined as 0.54\%,
+while that from the $\delta \phi ^*$ was determined as 0.01\%. 
+%A proportionality constant called $\emph{calibration constant}$ is
+%used to convert the known polarization at thermal equilibrium at a
+%given temperature to the true polarization. The target polarization
+%is based on the accuracy of this calibration constants and  
+The systematic error on the target polarization was estimated as 5\%,
+which constitutes the largest systematic uncertainty \cite{109}. The
+error on the beam polarization measurement comes from a global error
+of the M$\o$ller measurements and the error due to the fit to these
+measurements. The beam polarization uncertainty during SANE was
+measured as 1.5\% \cite{109}. 
+
+For both single-arm and coincidence data sets, the dilution factors
+have been determined using the comparison of data-to-Monte Carlo
+simulated yields. Since the simulated yields were based on the packing
+fraction, the error of 5\% on the packing fraction measurement
+propagates to the dilution factor.  Therefore, the uncertainty of the
+form factor ratio, $G_E^p/G_M^p$ due to the error of the dilution
+factor was determined as 1.34\%. 
+
+Single-arm data were analyzed using an extended momentum acceptance
+for the region of  $10\% \textless \delta \textless 12\%$, where the
+HMS optics were not well-tested. The reconstruction of the particle
+tracks from this region was not well-understood. Therefore, the
+uncertainty of the spectrometer optics on this region was a particular
+source of systematic uncertainty for the single-arm data
+\cite{147}. This has been tested with the Monte Carlo simulation. The
+biggest loss of events in this higher $\delta$ region, $10\% \textless
+\delta \textless 12\%$ was found to be at the HMS vacuum pipe exit. By
+applying $\pm$2 mm offsets to the vacuum pipe positions on both
+vertical and horizontal directions separately in MC, and taking the
+standard effective solid angle change between the offset and the
+nominal vacuum pipe position, the uncertainty due to higher-momentum
+electron tracks hitting the edge of the vacuum pipe exit was
+determined.  The resulting uncertainty due to the particle track
+reconstruction and effective solid angle change was estimated as
+0.68\%.  
+%Also, Monte Carlo yields were normalized to data in the invariant
+%mass region of 0.7\textless W\textless 0.85 GeV/c$^2$. Therefore, the
+%uncertainty, 0.68\% that comes from losing events due to higher
+%$\delta$ are already accounted in the dilution factors. 
+
+Table~\ref{tabsys} summarizes non-negligible contributions to the
+systematic uncertainty of the single-arm data. Each source of
+systematics, the uncertainty of each quantity, and the resulting
+contribution to the relative systematic uncertainty of the  $\mu_p
+G_E^p/G_M^p$ ratio (=$\mu_p R$) are shown. The relative systematic
+uncertainty was obtained by summing all the individual contributions
+linearly and quadratically. The linear sum represents the maximum
+possible error of the measurement, which propagates to the error on
+$\mu_p G_E^p/G_M^p$ and was estimated as 9.13$\%$.   
+The final error on the form factor ratio represents by the quadratic
+sum and was estimated as  5.44$\%$. The polarizations of the beam and
+target and the packing fraction were the dominant contributions to the
+systematic uncertainty. %However, due to lack of statistics for the
+For the coincidence data, which are statistically limited,
+the systematic uncertainty was estimated based on
+the detailed systematics study at the single-arm data and found
+%negligible. 
+to be very small.
+
+  \begin{table}[htbp]
+   \centering
+   \begin{tabular}{|l|c|c|} 
+      \hline
+         Quantity         & Error    & $\frac{\delta (\mu_p G_E^p/G_M^p)}{\mu_p G_E^p/G_M^p}$  \\
+      \hline
+      $E$ (GeV)           & 0.003    &   0.07\%   \\
+      $E'$ (GeV)          & 0.004    &   0.13\%   \\      
+      $\theta_e$ (mrad)   & 0.5      &   0.54\%   \\          
+      $\theta^*$ (mrad)   & 1.22     &   0.54\%          \\
+      $\phi^*$ (mrad)     & 0.3      &   0.01\%         \\      
+      $P_T$   ($\%$)      & 5.0      &   5.0\%    \\
+      $P_B$     ($\%$)    & 1.5      &   1.5\%     \\
+      Packing Fraction, \emph{pf}   ($\%$)   &  5 &   1.34\%   \\
+%      $10 \textless \delta \textless 12$   & 0.68 $\%$  &   \\            
+      \hline
+      \multicolumn{2}{|l|}{Linear sum :}     &   9.13\%    \\
+      \hline
+      \multicolumn{2}{|l|}{Quadratic sum : } &   5.44\%    \\
+      \hline      
+  \end{tabular}
+   \caption{ Systematic uncertainty of each parameter and the
+     relative systematic uncertainty on the $\mu_p G_E^p/G_M^p$ ratio
+     due to the propagated uncertainty for the single-arm data. 
+     The maximum possible systematic uncertainty is obtained by
+     the linear sum of all individual contributions. The final
+     systematic uncertainty is obtained by the quadratic sum of
+     all individual contributions.} 
+   \label{tabsys}
+   \end{table}
+
+\section{Results}
+
+The results for the proton elastic form factor ratio, $\mu_p
+G_E^p/G_M^p$, determined for both single-arm and coincidence data are
+shown in Tab.~\ref{tabasym}. For the single-arm data, 
+the resulting form factor ratio from the
+two $\delta$ regions of the HMS momentum acceptance was determined by
+extrapolating both measurements to the average $Q^2$ using Kelly's
+parametrization \cite{99} and then taking the weighted average of the
+two form factor ratios. The resulting form factor ratio, $\mu_p
+G_E^p/G_M^p = 0.720 \pm 0.176_{stat} \pm 0.039_{sys}$ was obtained for an
+average four-momentum transfer squared $Q^2=2.06$ (GeV/c)$^2$. 
+
+The form factor ratios from the coincidence data from two beam
+energies were also combined and the weighted average $\mu_p
+G_E^p/G_M^p$ was obtained at the average $Q^2=5.66$
+(GeV/c)$^2$. Since the errors on the coincidence data were 
+largely dominated by statistics, the systematic uncertainties  were not
+explicitly studied. Instead, the systematics from single-arm data were 
+applied for an estimation. The resulting form factor ratio 
+for the coincidence data was obtained as $\mu_p
+G_E^p/G_M^p = 0.244 \pm 0.353_{stat} \pm 0.013_{sys}$ for an average
+$Q^2=5.66$ (GeV/c)$^2$. 
+
+Table~\ref{final} shows the final values for the $\mu_p G_E^p/G_M^p$ ratio
+together with the statistical and systematic uncertainties at each average
+$Q^2$ value.   
+  \begin{table}[htbp]
+   \centering
+   \begin{tabular}{|c|c|} 
+      \hline
+      $<Q^2>$ / (GeV/c)$^2$  & $\mu_p R \pm \delta (\mu_p R_{stat}) \pm \delta (\mu_p R_{sys})$\\
+      \hline
+      $2.06$                 &  0.720 $\pm$ 0.176 $\pm$ 0.039  \\
+      $5.66$                 &  0.244 $\pm$ 0.353 $\pm$ 0.013  \\     
+      \hline
+  \end{tabular}
+     \vspace{-0.1cm}
+   \caption{Results of the form factor analysis from the experiment SANE. The systematic error
+    is based on the quadratic sum of individual contributions in Tab.~\ref{tabsys}.}
+   \label{final}
+   \end{table}
+
+Figure~\ref{resultratio} shows the form factor measurements from SANE
+together with the world data as a function of $Q^2$. The inner-error
+bars represent the statistical and the outer-error bars the quadratic sum of
+the statistical and systematic errors.  
+
+\begin{figure}[htbp]
+\centering
+\mbox{\includegraphics[width=\linewidth]{gep_gmp_ratio_SANEhighlited}}
+\caption{The form factor measurements from SANE together with the
+  world data as a function of $Q^2$. The inner-error bars are
+  systamatic and the outer-error bars are the quadratic sum of the
+  statistical and systematic errors.} % and the systematic uncertainty
+                                % is displayed as a black bar at the
+                                % bottom of the figure.} 
+\label{resultratio}
+\end{figure}
+
+
+\section{Discussion and Conclusion}
+
+Measurements of the proton's elastic form factor ratio, $\mu{_p}
+G{^p}_E/G{^p}_M$, from the polarization-transfer experiments at high
+$Q^2$ continue to show a dramatic discrepancy with the ratio obtained 
+from the traditional Rosenbluth technique in unpolarized cross section
+measurements as shown in Fig~\ref{resultratio}.  
+The measurement of the beam-target asymmetry in the elastic \emph{ep}
+scattering is an independent, third technique to determine the proton 
+form factor ratio. 
+The results from this method are in full agreement with the
+proton recoil polarization data, which validates the
+polarization-transfer method and reaffirms the discrepancy between
+Rosenbluth and polarization data with different systematics.  
+Two-photon exchange (TPE) continues to be a possible explanation for the
+form factor discrepancy at high $Q^2$. 
+However, the discrepancy may or may not be due to TPE, and further TPE 
+measurements at high $Q^2$ need to be made before a final conclusion on 
+TPE can be achieved.
+
+Since the sensitivity of the beam-target asymmetry to TPE effect is
+formally the same as in the recoil-polarization, this method was expected to
+show consistent results with the recoil-polarization method. Having
+different systematic errors from the Rosenbluth method and the
+polarization-transfer technique, by measuring $G_E/G_M$ with the
+polarized target technique, the discovery of unknown or underestimated 
+systematic errors in the previous measurement techniques is possible. 
+ 
+Our result for $\mu{_p} G{^p}_E/G{^p}_M$ at $Q^2$=2.06 (GeV/c)$^2$ is 
+consistent with the previous measurement of the beam-target asymmetry at 
+$Q^2$=1.5 (GeV/c)$^2$~\cite{60} and agrees very well with the existing 
+recoil-polarization measurements.
+Our measurement did not reveal any unknown systematic difference from
+the polarization-transfer method. 
+
+The result at $Q^2$=5.66 (GeV/c)$^2$ has a larger statistical
+uncertainty due to the small number of counts. As a byproduct
+measurement of the SANE experiment, the precision of this result is
+limited by statistics.  
+However, the measurement with HMS was not under optimized conditions. 
+A gas leak in HMS drift chamber during the coincidence data taking resulted
+in only 40\% efficiency for elastic proton detection with the
+HMS. In addition, due to a damage of the superconducting Helmholtz
+coils that used to polarize the NH$_3$ target, the production
+data-taking time was reduced.  
+Therefore, single-arm data were taken for only about $\sim$12 hours in
+total while coincidence data for elastic kinematics were taken for
+only about one week for both beam energies 4.725 GeV and 5.895 GeV,
+$\sim$40 hours and $\sim$155 hours, respectively. The target spin
+orientation was not optimized for the measurement of $G_E/G_M$.  
+Nevertheless, the obtained precision confirms the
+suitability of using the beam-target asymmetry for determinations of
+the $\mu_p G_E^p/G_M^p$ ratio at high $Q^2$.  
+% can we add an estimate how high in Q2 we can go for 10% error and 1000h?
+
+Under optimized conditions, it would have been possible to take at least 
+four times the amount of data in the same time period, which would decrease
+the error bars on both measurements by at least a factor of two. It is
+hence suitable to extend the polarized-target technique to higher $Q^2$ and
+achieve high precision with a dedicated experiment under optimized
+conditions. 
+
+
+
+%\subsubsection{}
+
+% If in two-column mode, this environment will change to single-column
+% format so that long equations can be displayed. Use
+% sparingly.
+%\begin{widetext}
+% put long equation here
+%\end{widetext}
+
+% figures should be put into the text as floats.
+% Use the graphics or graphicx packages (distributed with LaTeX2e)
+% and the \includegraphics macro defined in those packages.
+% See the LaTeX Graphics Companion by Michel Goosens, Sebastian Rahtz,
+% and Frank Mittelbach for instance.
+%
+% Here is an example of the general form of a figure:
+% Fill in the caption in the braces of the \caption{} command. Put the label
+% that you will use with \ref{} command in the braces of the \label{} command.
+% Use the figure* environment if the figure should span across the
+% entire page. There is no need to do explicit centering.
+
+% \begin{figure}
+% \includegraphics{}%
+% \caption{\label{}}
+% \end{figure}
+
+% Surround figure environment with turnpage environment for landscape
+% figure
+% \begin{turnpage}
+% \begin{figure}
+% \includegraphics{}%
+% \caption{\label{}}
+% \end{figure}
+% \end{turnpage}
+
+% tables should appear as floats within the text
+%
+% Here is an example of the general form of a table:
+% Fill in the caption in the braces of the \caption{} command. Put the label
+% that you will use with \ref{} command in the braces of the \label{} command.
+% Insert the column specifiers (l, r, c, d, etc.) in the empty braces of the
+% \begin{tabular}{} command.
+% The ruledtabular enviroment adds doubled rules to table and sets a
+% reasonable default table settings.
+% Use the table* environment to get a full-width table in two-column
+% Add \usepackage{longtable} and the longtable (or longtable*}
+% environment for nicely formatted long tables. Or use the the [H]
+% placement option to break a long table (with less control than 
+% in longtable).
+% \begin{table}%[H] add [H] placement to break table across pages
+% \caption{\label{}}
+% \begin{ruledtabular}
+% \begin{tabular}{}
+% Lines of table here ending with \\
+% \end{tabular}
+% \end{ruledtabular}
+
+% \end{table}
+
+% Surround table environment with turnpage environment for landscape
+% table
+% \begin{turnpage}
+% \begin{table}
+% \caption{\label{}}
+% \begin{ruledtabular}
+% \begin{tabular}{}
+% \end{tabular}
+% \end{ruledtabular}
+% \end{table}
+% \end{turnpage}
+
+% Specify following sections are appendices. Use \appendix* if there
+% only one appendix.
+%\appendix
+%\section{}
+
+% If you have acknowledgments, this puts in the proper section head.
+%\begin{acknowledgments}
+% put your acknowledgments here.
+%\end{acknowledgments}
+
+% Create the reference section using BibTeX:
+\bibliography{ref_new}
+
+\end{document}
+%
+% ****** End of file apstemplate.tex ******
+
